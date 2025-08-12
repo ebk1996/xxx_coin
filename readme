@@ -1,0 +1,36 @@
+https://github.com/ebk1996/aurora_tech
+
+How to run locally
+
+Create the project structure
+
+mkdir aurora-talent && cd aurora-talent
+mkdir public
+# add the files above into their paths
+
+Install dependencies
+
+npm init -y
+npm i express mysql2 cors helmet express-rate-limit dotenv
+
+**Create **`` with your MySQL credentials (based on .env.example).
+
+Create the database
+
+# Run in a MySQL client
+SOURCE /path/to/schema.sql;
+
+Start the server
+
+node server.js
+# Open http://localhost:3000
+
+Notes & options
+
+Security & privacy: This demo adds basic validation, prepared statements, and rate limiting. For production, add a privacy policy page and CSRF defense if you enable non-JSON forms.
+
+Hosting: Place server.js on a small Node host (Railway, Render, Fly.io, etc.) and point a domain to it. Use managed MySQL (PlanetScale, RDS, etc.).
+
+Analytics: You can later add anonymized analytics (e.g., Plausible) to measure conversion.
+
+Customization: Change branding (logo, colors, copy) in index.html and tune the statistics text for your region/market.

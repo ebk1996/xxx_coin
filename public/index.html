@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Launch Your Tech Career — Modern Career Change Program</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b1020; --card:#111833; --text:#ecf1ff; --muted:#c8d1ff; --accent:#6ea8fe; --accent-2:#8ef0cf; --border:#232a49; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif; background:linear-gradient(160deg,#0b1020 0%, #0b1429 100%); color:var(--text); }
+    .wrap{ max-width:1100px; margin:0 auto; padding:28px; }
+    header{ display:grid; grid-template-columns:1fr auto; align-items:center; gap:16px; padding:12px 0 20px; }
+    .logo{ font-weight:700; letter-spacing:.4px; font-size:18px; }
+    .badge{ font-size:12px; background:rgba(110,168,254,.18); color:var(--accent); padding:6px 10px; border:1px solid var(--border); border-radius:999px; }
+    .hero{ display:grid; grid-template-columns:1.1fr .9fr; gap:28px; }
+    .card{ background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0)); border:1px solid var(--border); border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+    .hero-copy{ padding:28px; }
+    h1{ margin:0 0 10px; font-size:38px; line-height:1.05; }
+    p.lead{ font-size:18px; color:var(--muted); margin:0 0 20px; }
+    ul.value{ margin:18px 0 0 18px; color:var(--muted); }
+    .statgrid{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:18px 0 8px; }
+    .stat{ background:rgba(255,255,255,0.03); border:1px dashed var(--border); border-radius:14px; padding:14px; }
+    .stat b{ display:block; font-size:22px; margin-bottom:4px; color:var(--accent-2); }
+    .form-card{ padding:22px; }
+    form{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    label{ font-size:12px; color:#b9c3ff; display:block; margin-bottom:6px; }
+    input, select{ width:100%; padding:12px 12px; border-radius:12px; background:#0e1530; color:var(--text); border:1px solid var(--border); outline:none; }
+    input:focus, select:focus{ border-color:var(--accent); }
+    .col-span-2{ grid-column:1 / -1; }
+    .consent{ font-size:12px; color:#9fb0ff; }
+    .btn{ cursor:pointer; background:linear-gradient(90deg,var(--accent),#7fb3ff); color:#06122e; border:0; font-weight:700; padding:14px 16px; border-radius:12px; box-shadow:0 8px 24px rgba(110,168,254,.35); }
+    .btn:disabled{ opacity:.6; cursor:not-allowed; }
+    .notice{ margin-top:10px; font-size:13px; }
+    footer{ margin:28px 0 8px; opacity:.7; font-size:12px; text-align:center; }
+    @media (max-width:900px){ .hero{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Aurora Talent</div>
+      <div class="badge">Free Career Change • Limited Cohorts</div>
+    </header>
+
+    <section class="hero">
+      <article class="card hero-copy">
+        <h1>Switch to Tech with Confidence</h1>
+        <p class="lead">Software Engineering and Data Analysis are powering every industry. Companies hire for **skills**, not pedigree — and demand remains strong for adaptable, job-ready talent.</p>
+        <ul class="value">
+          <li>🚀 <strong>Growth paths</strong>: start as a jr. developer or analyst, grow into senior, ML, or product-focused roles.</li>
+          <li>💼 <strong>Transferable skills</strong>: problem-solving, spreadsheets, customer ops, and domain knowledge all convert well.</li>
+          <li>🌍 <strong>Industry breadth</strong>: finance, healthcare, climate, e‑commerce, SaaS — tech roles exist everywhere.</li>
+        </ul>
+        <div class="statgrid">
+          <div class="stat"><b>3–6 months</b>Typical upskilling runway to employable projects</div>
+          <div class="stat"><b>50k–100k+</b>Common entry comp range depending on city & portfolio</div>
+          <div class="stat"><b>1:1 coaching</b>Portfolio, interview prep, and referrals</div>
+        </div>
+        <p class="lead">Apply for our free career change program. If selected, you’ll get a personalized roadmap, mock interviews, and curated employer intros.</p>
+      </article>
+
+      <aside class="card form-card">
+        <h2 style="margin:0 0 8px;">Apply (Free)</h2>
+        <p style="margin:0 0 18px; color:var(--muted);">No obligations. We review every application and reply with next steps.</p>
+        <form id="apply-form" novalidate>
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Alex Rivera" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="alex@email.com" required />
+          </div>
+          <div>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="" disabled selected>Select…</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Nonbinary</option>
+              <option>Prefer not to say</option>
+              <option>Self-describe</option>
+            </select>
+          </div>
+          <div>
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="16" max="100" placeholder="28" required />
+          </div>
+          <div class="col-span-2">
+            <label for="occupation">Current Occupation</label>
+            <input id="occupation" name="current_occupation" type="text" placeholder="Retail associate / Teacher / Customer support / …" required />
+          </div>
+          <div class="col-span-2">
+            <label><input id="consent" type="checkbox" required /> I agree to be contacted about training and job opportunities.</label>
+            <p class="consent">We never sell data. You can request deletion at any time.</p>
+          </div>
+          <div class="col-span-2">
+            <button class="btn" id="submit-btn" type="submit">Submit Application</button>
+            <div class="notice" id="notice"></div>
+          </div>
+        </form>
+      </aside>
+    </section>
+
+    <footer>© <span id="year"></span> Aurora Talent. All rights reserved.</footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('apply-form');
+    const btn  = document.getElementById('submit-btn');
+    const notice = document.getElementById('notice');
+
+    function show(msg, ok=false){
+      notice.textContent = msg;
+      notice.style.color = ok ? '#8ef0cf' : '#ffb3b3';
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const payload = {
+        name: form.name.value.trim(),
+        email: form.email.value.trim(),
+        gender: form.gender.value,
+        age: Number(form.age.value),
+        current_occupation: form.current_occupation.value.trim()
+      };
+
+      // simple client-side validation
+      if(!payload.name || !payload.email || !payload.gender || !payload.age || !payload.current_occupation){
+        show('Please complete all fields.');
+        return;
+      }
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)){
+        show('Please enter a valid email.');
+        return;
+      }
+      if(payload.age < 16 || payload.age > 100){
+        show('Age must be between 16 and 100.');
+        return;
+      }
+
+      btn.disabled = true; show('Submitting…');
+      try{
+        const res = await fetch('/api/apply', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if(!res.ok){ throw new Error(data.error || 'Submission failed'); }
+        show('Thanks! Application received. We\'ll be in touch soon.', true);
+        form.reset();
+      }catch(err){
+        show(err.message || 'Something went wrong.');
+      }finally{
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
